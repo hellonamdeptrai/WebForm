@@ -2,47 +2,92 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <hgroup class="title">
-        <h1><%: Title %>.</h1>
-    </hgroup>
     
-    <section id="loginForm">
-        <h2>Use a local account to log in.</h2>
-        <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
-            <LayoutTemplate>
-                <p class="validation-summary-errors">
-                    <asp:Literal runat="server" ID="FailureText" />
-                </p>
-                <fieldset>
-                    <legend>Log in Form</legend>
-                    <ol>
-                        <li>
-                            <asp:Label runat="server" AssociatedControlID="UserName">User name</asp:Label>
-                            <asp:TextBox runat="server" ID="UserName" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName" CssClass="field-validation-error" ErrorMessage="The user name field is required." />
-                        </li>
-                        <li>
-                            <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
-                            <asp:TextBox runat="server" ID="Password" TextMode="Password" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="The password field is required." />
-                        </li>
-                        <li>
-                            <asp:CheckBox runat="server" ID="RememberMe" />
-                            <asp:Label runat="server" AssociatedControlID="RememberMe" CssClass="checkbox">Remember me?</asp:Label>
-                        </li>
-                    </ol>
-                    <asp:Button runat="server" CommandName="Login" Text="Log in" />
-                </fieldset>
-            </LayoutTemplate>
-        </asp:Login>
-        <p>
-            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register</asp:HyperLink>
-            if you don't have an account.
-        </p>
-    </section>
+<!-- Page Banner Section Start -->
+<div class="page-banner-section section">
+    <div class="page-banner-wrap row row-0 d-flex align-items-center ">
 
-    <section id="socialLoginForm">
-        <h2>Use another service to log in.</h2>
-        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
-    </section>
+        <!-- Page Banner -->
+        <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
+            <div class="page-banner">
+                <h1>Login</h1>
+                <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="col-lg-4 col-md-6 col-12 order-lg-1">
+            <div class="banner"><a href="#"><img src="assets/images/banner/banner-15.jpg" alt="Banner"></a></div>
+        </div>
+
+        <!-- Banner -->
+        <div class="col-lg-4 col-md-6 col-12 order-lg-3">
+            <div class="banner"><a href="#"><img src="assets/images/banner/banner-14.jpg" alt="Banner"></a></div>
+        </div>
+
+    </div>
+</div><!-- Page Banner Section End -->
+
+<!-- Login Section Start -->
+<div class="login-section section mt-90 mb-90">
+    <div class="container">
+        <div class="row">
+            
+            <!-- Login -->
+            <div class="col-md-6 col-12 d-flex">
+                <div class="ee-login">
+                    
+                    <h3>Login to your account</h3>
+                    <p>E&E provide how all this mistaken idea of denouncing pleasure and sing pain born an will give you a complete account of the system, and expound</p>
+                    
+                    <!-- Login Form -->
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-12 mb-30"><input type="text" placeholder="Type your username or email address"></div>
+                            <div class="col-12 mb-20"><input type="password" placeholder="Enter your passward"></div>
+                            <div class="col-12 mb-15">
+                                
+                                <input type="checkbox" id="remember_me">
+                                <label for="remember_me">Remember me</label>
+                                
+                                <a href="#">Forgotten pasward?</a>
+                                
+                            </div>
+                            <div class="col-12"><input type="submit" value="LOGIN"></div>
+                        </div>
+                    </form>
+                    <h4>Don’t have account? please click <a href="register">Register</a></h4>
+                    
+                </div>
+            </div>
+            
+            <div class="col-md-1 col-12 d-flex">
+                
+                <div class="login-reg-vertical-boder"></div>
+                
+            </div>
+            
+            <!-- Login With Social -->
+            <div class="col-md-5 col-12 d-flex">
+                
+                <div class="ee-social-login">
+                    <h3>Also you can login with...</h3>
+                    
+                    <a href="#" class="facebook-login">Login with <i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter-login">Login with <i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google-plus-login">Login with <i class="fa fa-google-plus"></i></a>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div><!-- Login Section End -->
 </asp:Content>

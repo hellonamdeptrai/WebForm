@@ -1,89 +1,333 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html>
-<html lang="en">
-<head runat="server">
-    <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-    <asp:PlaceHolder runat="server">      
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width" />
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>E&E - Electronics eCommerce Bootstrap5 HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- CSS
+	============================================ -->
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/icon-font.min.css"/>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css"/>
+    
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-    <form runat="server">
-    <asp:ScriptManager runat="server">
-        <Scripts>
-            <%--Framework scripts--%>
-            <asp:ScriptReference Name="MsAjaxBundle" />
-            <asp:ScriptReference Name="jquery" />
-            <asp:ScriptReference Name="jquery.ui.combined" />
-            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-            <asp:ScriptReference Name="WebFormsBundle" />
-            <%--Site scripts--%>
 
-        </Scripts>
-    </asp:ScriptManager>
-    <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title">
-                    <a runat="server" href="~/">your logo here</a></p>
+    <!-- Header Section Start -->
+    <div class="header-section section">
+
+        <!-- Header Top Start -->
+        <div class="header-top header-top-one header-top-border pt-10 pb-10">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+
+                    <div class="col order-5  order-lg-2 mt-10 mb-10">
+                        <!-- Header Advance Search Start -->
+                        <div class="header-advance-search">
+                        
+                            <form action="#">
+                                <div class="input"><input type="text" placeholder="Search your product"/></div>
+                                <div class="select">
+                                    <select class="nice-select">
+                                        <option>All Categories</option>
+                                        <option>Mobile</option>
+                                        <option>Computer</option>
+                                        <option>Laptop</option>
+                                        <option>Camera</option>
+                                    </select>
+                                </div>
+                                <div class="submit"><button><i class="icofont icofont-search-alt-1"></i></button></div>
+                            </form>
+                        
+                        </div><!-- Header Advance Search End -->
+                    </div>
+
+                    <div class="col order-2 order-lg-12 mt-10 mb-10">
+                        <!-- Header Account Links Start -->
+                        <div class="header-account-links">
+                            <a href="Register.aspx"><i class="icofont icofont-user-alt-7"></i> <span>Đăng ký</span></a>
+                            <a href="Login.aspx"><i class="icofont icofont-login d-none"></i> <span>Đăng nhập</span></a>
+                        </div><!-- Header Account Links End -->
+                    </div>
+
+                </div>
             </div>
-            <div class="float-right">
-                <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register.aspx">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login.aspx">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage.aspx" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" />
-                                </a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
+        </div><!-- Header Top End -->
+
+        <!-- Header Bottom Start -->
+        <div class="header-bottom header-bottom-one header-sticky">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+
+                    <div class="col mt-15 mb-15">
+                        <!-- Logo Start -->
+                        <div class="header-logo">
+                            <a href="Default.aspx">
+                                <img src="assets/images/logo.png" alt="E&E - Electronics eCommerce Bootstrap4 HTML Template"/>
+                            </a>
+                        </div><!-- Logo End -->
+                    </div>
+
+                    <div class="col order-1 order-lg-1 d-none d-lg-block">
+                        <!-- Main Menu Start -->
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="Default.aspx">Trang chủ</a>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="Product.aspx">Điện Thoại</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="shop-grid.html">shop grid</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">shop grid Left Sidebar</a></li>
+                                            <li><a href="shop-grid-right-sidebar.html">shop grid Right Sidebar</a></li>
+                                            <li><a href="shop-grid-extended.html">shop grid Extended</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="Product.aspx">Điện Thoại cũ</a>
+                                    </li>
+                                    <li><a href="Contact.aspx">Liên hệ</a></li>
+                                </ul>
+                            </nav>
+                        </div><!-- Main Menu End -->
+                    </div>
+
+                    <div class="col order-lg-2">
+                        <!-- Header Shop Links Start -->
+                        <div class="header-shop-links">
+                            <!-- Cart -->
+                            <a href="cart.html" class="header-cart"><i class="ti-shopping-cart"></i> <span class="number">3</span></a>
+                        
+                        </div><!-- Header Shop Links End -->
+                    </div>
+                
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu order-12 d-block d-lg-none col"></div>
+
+                </div>
+            </div>
+        </div><!-- Header Bottom End -->
+
+
+    </div><!-- Header Section End -->
+
+    <!-- Mini Cart Wrap Start -->                      
+    <div class="mini-cart-wrap">
+
+        <!-- Mini Cart Top -->
+        <div class="mini-cart-top">    
+    
+            <button class="close-cart">Close Cart<i class="icofont icofont-close"></i></button>
+        
+        </div>
+
+        <!-- Mini Cart Products -->
+        <ul class="mini-cart-products">
+            <li>
+                <a class="image"><img src="assets/images/product/product-1.png" alt="Product"></a>
+                <div class="content">
+                    <a href="single-product.html" class="title">Waxon Note Book Pro 5</a>
+                    <span class="price">Price: $295</span>
+                    <span class="qty">Qty: 02</span>
+                </div>
+                <button class="remove"><i class="fa fa-trash-o"></i></button>
+            </li>
+            <li>
+                <a class="image"><img src="assets/images/product/product-2.png" alt="Product"></a>
+                <div class="content">
+                    <a href="single-product.html" class="title">Aquet Drone D 420</a>
+                    <span class="price">Price: $275</span>
+                    <span class="qty">Qty: 01</span>
+                </div>
+                <button class="remove"><i class="fa fa-trash-o"></i></button>
+            </li>
+            <li>
+                <a class="image"><img src="assets/images/product/product-3.png" alt="Product"></a>
+                <div class="content">
+                    <a href="single-product.html" class="title">Game Station X 22</a>
+                    <span class="price">Price: $295</span>
+                    <span class="qty">Qty: 01</span>
+                </div>
+                <button class="remove"><i class="fa fa-trash-o"></i></button>
+            </li>
+        </ul>
+
+        <!-- Mini Cart Bottom -->
+        <div class="mini-cart-bottom">    
+    
+            <h4 class="sub-total">Total: <span>$1160</span></h4>
+
+            <div class="button">
+                <a href="Cart.aspx">ĐI ĐẾN GIỎ HÀNG</a>
+            </div>
+        
+        </div>
+
+    </div><!-- Mini Cart Wrap End --> 
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay"></div>
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+    <!-- Footer Section Start -->
+    <div class="footer-section section bg-ivory">
+   
+        <!-- Footer Top Section Start -->
+        <div class="footer-top-section section pt-90 pb-50">
+            <div class="container">
+           
+                <!-- Footer Widget Start -->
+                <div class="row">
+                    <div class="col mb-90">
+                        <div class="footer-widget text-center">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo.png" alt="E&E - Electronics eCommerce Bootstrap4 HTML Template">
+                                <img class="theme-dark" src="assets/images/logo-light.png" alt="E&E - Electronics eCommerce Bootstrap4 HTML Template">
+                            </div>
+                            <p>Electronics product actual teachings of  he great explorer of the truth, the malder of human happiness. No one rejects</p>
+                        </div>
+                    </div>
+                </div><!-- Footer Widget End -->
+            
+                <div class="row">
+                
+                    <!-- Footer Widget Start -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-40">
+                        <div class="footer-widget">
+                       
+                            <h4 class="widget-title">CONTACT INFO</h4>
+                        
+                            <p class="contact-info">
+                                <span>Address</span>
+                                You address will be here <br>
+                                 Lorem Ipsum text                        </p>
+                        
+                            <p class="contact-info">
+                                <span>Phone</span>
+                                <a href="tel:01234567890">01234 567 890</a>
+                                <a href="tel:01234567891">01234 567 891</a>
                             </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
-                <nav>
-                    <ul id="menu">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About.aspx">About</a></li>
-                        <li><a runat="server" href="~/Contact.aspx">Contact</a></li>
-                    </ul>
-                </nav>
+                        
+                            <p class="contact-info">
+                                <span>Web</span>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                                <a href="#">www.example.com</a>
+                            </p>
+                        
+                        </div>
+                    </div><!-- Footer Widget End -->
+                
+                    <!-- Footer Widget Start -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-40">
+                        <div class="footer-widget">
+                       
+                            <h4 class="widget-title">CUSTOMER CARE</h4>
+                        
+                            <ul class="link-widget">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        
+                        </div>
+                    </div><!-- Footer Widget End -->
+                
+                    <!-- Footer Widget Start -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-40">
+                        <div class="footer-widget">
+                       
+                            <h4 class="widget-title">INFORMATION</h4>
+                        
+                            <ul class="link-widget">
+                                <li><a href="#">Track your order</a></li>
+                                <li><a href="#">Locate Store</a></li>
+                                <li><a href="#">Online Support</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">Shipping & Returns</a></li>
+                                <li><a href="#">Gift coupon</a></li>
+                                <li><a href="#">Special coupon</a></li>
+                            </ul>
+                        
+                        </div>
+                    </div><!-- Footer Widget End -->
+                
+                    <!-- Footer Widget Start -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-40">
+                        <div class="footer-widget">
+                       
+                            <h4 class="widget-title">LATEST TWEET</h4>
+                        
+                            <div class="footer-tweet"></div>
+                        
+                        </div>
+                    </div><!-- Footer Widget End -->
+                
+                </div>
+            
             </div>
-        </div>
-    </header>
-    <div id="body">
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-    </div>
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>
-                    &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
-                </p>
+        </div><!-- Footer Bottom Section Start -->
+   
+        <!-- Footer Bottom Section Start -->
+        <div class="footer-bottom-section section">
+            <div class="container">
+                <div class="row">
+                
+                    <!-- Footer Copyright -->
+                    <div class="col-lg-6 col-12">
+                        <div class="footer-copyright"><p>&copy; Copyright, All Rights Reserved by <a href="#">E&E</a></p></div>
+                    </div>
+                
+                    <!-- Footer Payment Support -->
+                    <div class="col-lg-6 col-12">
+                        <div class="footer-payments-image"><img src="assets/images/payment-support.png" alt="Payment Support Image"></div>
+                    </div>
+                
+                </div>
             </div>
-        </div>
-    </footer>
-    </form>
+        </div><!-- Footer Bottom Section Start -->
+    
+    </div><!-- Footer Section End -->
+
+    <!-- JS
+    ============================================ -->
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Ajax Mail -->
+    <script src="assets/js/ajax-mail.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
