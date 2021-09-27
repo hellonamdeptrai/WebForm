@@ -48,7 +48,7 @@
                                 <div class="input"><input type="text" placeholder="Search your product"/></div>
                                 <div class="select">
                                     <select class="nice-select">
-                                        <option>All Categories</option>
+                                        <option>Tất cả danh mục</option>
                                         <option>Mobile</option>
                                         <option>Computer</option>
                                         <option>Laptop</option>
