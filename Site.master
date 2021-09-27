@@ -6,7 +6,7 @@
 <head id="Head1" runat="server">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>E&E - Electronics eCommerce Bootstrap5 HTML Template</title>
+    <title>Thế giới điện thoại</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -55,7 +55,7 @@
                                         <option>Camera</option>
                                     </select>
                                 </div>
-                                <div class="submit"><button><i class="icofont icofont-search-alt-1"></i></button></div>
+                                <div class="submit"><button><i class="icofont icofont-search"></i></button></div>
                             </form>
                         
                         </div><!-- Header Advance Search End -->
