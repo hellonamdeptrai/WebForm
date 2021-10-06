@@ -8,13 +8,13 @@
         <!-- Page Banner -->
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
-                <h1>Cart</h1>
+                <h1>GIỎ Hàng</h1>
                 <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">CỬA HÀNG</a></li>
+                        <li><a href="#">GIỎ HÀNG</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,12 +44,12 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th class="pro-thumbnail">Image</th>
-                                    <th class="pro-title">Product</th>
-                                    <th class="pro-price">Price</th>
-                                    <th class="pro-quantity">Quantity</th>
-                                    <th class="pro-subtotal">Total</th>
-                                    <th class="pro-remove">Remove</th>
+                                    <th class="pro-thumbnail">Ảnh</th>
+                                    <th class="pro-title">Tên sản phẩm</th>
+                                    <th class="pro-price">Giá</th>
+                                    <th class="pro-quantity">Số lượng</th>
+                                    <th class="pro-subtotal">Tổng giá</th>
+                                    <th class="pro-remove">Xóa</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -96,16 +96,17 @@
                     <div class="col-lg-6 col-12 mb-15">
                         <!-- Calculate Shipping -->
                         <div class="calculate-shipping">
-                            <h4>Calculate Shipping</h4>
+                            <h4>Tính Toán Vận Chuyển</h4>
                             <form action="#">
                                 <div class="row">
                                     <div class="col-md-6 col-12 mb-25">
                                         <select class="nice-select">
-                                            <option>Bangladesh</option>
+                                            <option>Viet Nam</option>
                                             <option>China</option>
                                             <option>country</option>
                                             <option>India</option>
                                             <option>Japan</option>
+                                            <option>Bangladesh</option>
                                         </select>
                                     </div>
                                     <div class="col-md-6 col-12 mb-25">
@@ -121,21 +122,21 @@
                                         <input type="text" placeholder="Postcode / Zip">
                                     </div>
                                     <div class="col-md-6 col-12 mb-25">
-                                        <input type="submit" value="Estimate">
+                                        <input type="submit" value="ƯỚC TÍNH">
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <!-- Discount Coupon -->
                         <div class="discount-coupon">
-                            <h4>Discount Coupon Code</h4>
+                            <h4>Mã Phiếu Giảm Giá</h4>
                             <form action="#">
                                 <div class="row">
                                     <div class="col-md-6 col-12 mb-25">
-                                        <input type="text" placeholder="Coupon Code">
+                                        <input type="text" placeholder="Mã Code">
                                     </div>
                                     <div class="col-md-6 col-12 mb-25">
-                                        <input type="submit" value="Apply Code">
+                                        <input type="submit" value="ÁP DỤNG MÃ">
                                     </div>
                                 </div>
                             </form>
@@ -146,14 +147,14 @@
                     <div class="col-lg-6 col-12 mb-40 d-flex">
                         <div class="cart-summary">
                             <div class="cart-summary-wrap">
-                                <h4>Cart Summary</h4>
-                                <p>Sub Total <span>$1250.00</span></p>
-                                <p>Shipping Cost <span>$00.00</span></p>
-                                <h2>Grand Total <span>$1250.00</span></h2>
+                                <h4>Tóm Tắt Giỏ Hàng</h4>
+                                <p>Giá Tiền <span>$1250.00</span></p>
+                                <p>Chi Phí Giao Hàng <span>$00.00</span></p>
+                                <h2>Tổng Tiền <span>$1250.00</span></h2>
                             </div>
                             <div class="cart-summary-button">
-                                <button class="checkout-btn">Checkout</button>
-                                <button class="update-btn">Update Cart</button>
+                                <button class="checkout-btn">Thanh Toán</button>
+                                <button class="update-btn">Cập Nhật Giỏ Hàng</button>
                             </div>
                         </div>
                     </div>
