@@ -8,12 +8,12 @@
         <!-- Page Banner -->
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
-                <h1>SHOP Grid VIEW</h1>
+                <h1>CHẾ ĐỘ XEM LƯỚI CỦA CỬA HÀNG</h1>
                 <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SHOP Grid VIEW</a></li>
+                        <li><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">CHẾ ĐỘ XEM LƯỚI</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,7 @@
 
                             <!-- Product Showing -->
                             <div class="product-showing">
-                                <p>Showing</p>
+                                <p>Hiển Thị</p>
                                 <select name="showing" class="nice-select">
                                     <option value="1">8</option>
                                     <option value="2">12</option>
@@ -65,20 +65,20 @@
 
                             <!-- Product Short -->
                             <div class="product-short">
-                                <p>Short by</p>
+                                <p>Sắp Xếp</p>
                                 <select name="sortby" class="nice-select">
-                                    <option value="trending">Trending items</option>
-                                    <option value="sales">Best sellers</option>
-                                    <option value="rating">Best rated</option>
-                                    <option value="date">Newest items</option>
-                                    <option value="price-asc">Price: low to high</option>
-                                    <option value="price-desc">Price: high to low</option>
+                                    <option value="trending">Các mặt hàng thịnh hành</option>
+                                    <option value="sales">Bán chạy nhất</option>
+                                    <option value="rating">Đánh giá tốt nhất</option>
+                                    <option value="date">Mới nhất</option>
+                                    <option value="price-asc">Giá: từ thấp đến cao</option>
+                                    <option value="price-desc">Giá: từ cao đến thấp</option>
                                 </select>
                             </div>
 
                             <!-- Product Pages -->
                             <div class="product-pages">
-                                <p>Pages 1 of 25</p>
+                                <p>Trang 1 trên 25</p>
                             </div>
 
                         </div><!-- Shop Top Bar End -->
@@ -1512,7 +1512,7 @@
                             <li><a href="#">3</a></li>
                             <li> - - - - - </li>
                             <li><a href="#">18</a></li>
-                            <li><a href="#">18</a></li>
+                            <li><a href="#">19</a></li>
                             <li><a href="#">20</a></li>
                             <li><a href="#">Next<i class="fa fa-angle-right"></i></a></li>
                         </ul>

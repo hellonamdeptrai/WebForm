@@ -8,12 +8,12 @@
         <!-- Page Banner -->
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
-                <h1>Product Details</h1>
+                <h1>CHI TIẾT SẢN PHẨM</h1>
                 <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">Product Details</a></li>
+                        <li><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">CHI TIẾT SẢN PHẨM</a></li>
                     </ul>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     <div class="head-content">
 
                         <div class="category-title">
-                            <a href="#" class="cat">Smartphone</a>
+                            <a href="#" class="cat">Điện thoại thông minh</a>
                             <h5 class="title">Flex 3310</h5>
                         </div>
 
@@ -102,22 +102,22 @@
                             <p>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora inform </p>
                         </div>
                         
-                        <span class="availability">Availability: <span>In Stock</span></span>
+                        <span class="availability">Số lượng: <span>Còn</span></span>
                         
                         <div class="quantity-colors">
                             
                             <div class="quantity">
-                                <h5>Quantity</h5>
+                                <h5>Số Lượng</h5>
                                 <div class="pro-qty"><input type="text" value="1"></div>
                             </div>                            
                             
                             <div class="colors">
-                                <h5>Color</h5>
+                                <h5>Màu</h5>
                                 <select class="nice-select">
-                                    <option>red</option>
-                                    <option>black</option>
-                                    <option>yellow</option>
-                                    <option>grey</option>
+                                    <option>Đỏ</option>
+                                    <option>Đen</option>
+                                    <option>Vàng</option>
+                                    <option>Xám</option>
                                 </select>
                             </div>                            
                             
@@ -137,17 +137,16 @@
                         <div class="tags">
                             
                             <h5>Tags:</h5>
-                            <a href="#">Electronic</a>
-                            <a href="#">Smartphone</a>
-                            <a href="#">Phone</a>
-                            <a href="#">Charger</a>
-                            <a href="#">Powerbank</a>
+                            <a href="#">Điện tử</a>
+                            <a href="#"> Điện thoại thông minh</a>
+                            <a href="#">Điện thoại</a>
+                            <a href="#">Bộ sạc</a>
                             
                         </div>
                         
                         <div class="share">
                             
-                            <h5>Share: </h5>
+                            <h5>Chia sẻ: </h5>
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
@@ -168,9 +167,9 @@
             <div class="col-lg-10 col-12 ml-auto mr-auto">
                 
                 <ul class="single-product-tab-list nav">
-                    <li><a href="#product-description" class="active" data-bs-toggle="tab" >description</a></li>
-                    <li><a href="#product-specifications" data-bs-toggle="tab" >specifications</a></li>
-                    <li><a href="#product-reviews" data-bs-toggle="tab" >reviews</a></li>
+                    <li><a href="#product-description" class="active" data-bs-toggle="tab" >Mô tả</a></li>
+                    <li><a href="#product-specifications" data-bs-toggle="tab" >Kĩ thuật</a></li>
+                    <li><a href="#product-reviews" data-bs-toggle="tab" >Đánh giá</a></li>
                 </ul>
                 
                 <div class="single-product-tab-content tab-content">
@@ -178,11 +177,11 @@
                         
                         <div class="row">
                             <div class="single-product-description-content col-lg-8 col-12">
-                                <h4>Introducing Flex 3310</h4>
+                                <h4>Giới thiệu Flex 3310</h4>
                                 <p>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in</p>
-                                <h4>Stylish Design</h4>
+                                <h4>Thiết kế</h4>
                                 <p>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli</p>
-                                <h4>Digital Camera, FM Radio & many more...</h4>
+                                <h4>Máy ảnh kỹ thuật số, đài FM và nhiều hơn nữa ......</h4>
                                 <p>enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia res eos qui ratione voluptatem sequi Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli</p>
                             </div>
                             <div class="single-product-description-image col-lg-4 col-12">
@@ -351,7 +350,7 @@
             
             <!-- Section Title Start -->
             <div class="col-12 mb-40">
-                <div class="section-title-one" data-title="RELATED PRODUCT"><h1>RELATED PRODUCT</h1></div>
+                <div class="section-title-one" data-title="RELATED PRODUCT"><h1>SẢN PHẨM LIÊN QUAN</h1></div>
             </div><!-- Section Title End -->
             
             <!-- Product Tab Content Start -->

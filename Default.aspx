@@ -109,7 +109,7 @@
             
                 <!-- Section Title Start -->
                 <div class="col-12 mb-40">
-                    <div class="section-title-one" data-title="FEATURED ITEMS"><h1>FEATURED ITEMS</h1></div>
+                    <div class="section-title-one" data-title="FEATURED ITEMS"><h1>MỤC NỔI BẬT</h1></div>
                 </div><!-- Section Title End -->
             
                 <!-- Product Tab Filter Start -->
@@ -121,7 +121,7 @@
                     
                         <!-- Product Tab List -->
                         <ul class="nav product-tab-list">
-                            <li><a class="active" data-bs-toggle="tab" href="#tab-one">all</a></li>
+                            <li><a class="active" data-bs-toggle="tab" href="#tab-one">TẤT CẢ</a></li>
                             <li><a data-bs-toggle="tab" href="#tab-two">LAPTOP</a></li>
                             <li><a data-bs-toggle="tab" href="#tab-one">DRONE</a></li>
                             <li><a data-bs-toggle="tab" href="#tab-two">TV & AUDIO</a></li>
@@ -664,7 +664,7 @@
             
                 <!-- Section Title Start -->
                 <div class="col-12 mb-40">
-                    <div class="section-title-one" data-title="BEST SELLER"><h1>BEST SELLERS</h1></div>
+                    <div class="section-title-one" data-title="BEST SELLER"><h1>BÁN CHẠY NHẤT</h1></div>
                 </div><!-- Section Title End -->
             
                 <div class="col-12">
@@ -1093,8 +1093,8 @@
                     <div class="feature feature-shipping">
                         <div class="feature-wrap">
                             <div class="icon"><img src="assets/images/icons/feature-van.png" alt="Feature"></div>
-                            <h4>FREE SHIPPING</h4>
-                            <p>Start from $100</p>
+                            <h4>MIỄN PHÍ GIAO HÀNG</h4>
+                            <p>Mua Từ 100$</p>
                         </div>
                     </div><!-- Feature End -->
                 </div>
@@ -1104,8 +1104,8 @@
                     <div class="feature feature-guarantee">
                         <div class="feature-wrap">
                             <div class="icon"><img src="assets/images/icons/feature-walet.png" alt="Feature"></div>
-                            <h4>MONEY BACK GUARANTEE</h4>
-                            <p>Back within 15 days</p>
+                            <h4>ĐẢM BẢO HOÀN TIỀN</h4>
+                            <p>Hoàn tiền trong 15 ngày đầu</p>
                         </div>
                     </div><!-- Feature End -->
                 </div>
@@ -1115,8 +1115,8 @@
                     <div class="feature feature-security">
                         <div class="feature-wrap">
                             <div class="icon"><img src="assets/images/icons/feature-shield.png" alt="Feature"></div>
-                            <h4>SECURE PAYMENTS</h4>
-                            <p>Payment Security</p>
+                            <h4>THANH TOÁN AN TOÀN</h4>
+                            <p>Bảo mật thanh toán</p>
                         </div>
                     </div><!-- Feature End -->
                 </div>
@@ -1132,7 +1132,7 @@
             
                 <!-- Section Title Start -->
                 <div class="col-12 mb-40">
-                    <div class="section-title-one" data-title="BEST DEALS"><h1>BEST DEALS</h1></div>
+                    <div class="section-title-one" data-title="BEST DEALS"><h1>GIÁ TỐT NHẤT</h1></div>
                 </div><!-- Section Title End -->
             
                 <!-- Product Tab Filter Start-->
@@ -1147,7 +1147,7 @@
                             
                                 <!-- Product Tab List -->
                                 <ul class="nav product-tab-list">
-                                    <li><a class="active" data-bs-toggle="tab" href="#tab-three">all</a></li>
+                                    <li><a class="active" data-bs-toggle="tab" href="#tab-three">TẤT CẢ</a></li>
                                     <li><a data-bs-toggle="tab" href="#tab-four">LAPTOP</a></li>
                                     <li><a data-bs-toggle="tab" href="#tab-three">DRONE</a></li>
                                     <li><a data-bs-toggle="tab" href="#tab-four">TV & AUDIO</a></li>
@@ -1707,7 +1707,7 @@
             
                 <!-- Section Title Start -->
                 <div class="col-12 mb-40">
-                    <div class="section-title-one" data-title="NEW ARRIVAL"><h1>NEW ARRIVAL</h1></div>
+                    <div class="section-title-one" data-title="NEW ARRIVAL"><h1>HÀNG MỚI NHẤT</h1></div>
                 </div><!-- Section Title End -->
             
                 <div class="col-12">
@@ -2164,8 +2164,8 @@
                 <!-- Mailchimp Subscribe Content Start -->
                 <div class="col-lg-6 col-12 mb-15 mt-15">
                     <div class="subscribe-content">
-                        <h2>SUBSCRIBE <span>OUR NEWSLETTER</span></h2>
-                        <h2><span>TO GET LATEST</span> PRODUCT UPDATE</h2>
+                        <h2>ĐĂNG KÍ <span>‎‎BẢN TIN CỦA CHÚNG TÔI‎</span></h2>
+                        <h2>ĐỂ CÓ ĐƯỢC<span> SẢN PHẨM MỚI NHẤT</span></h2>
                     </div>
                 </div><!-- Mailchimp Subscribe Content End -->
             
@@ -2174,8 +2174,8 @@
                 <div class="col-lg-6 col-12 mb-15 mt-15">
                 
 				    <form id="mc-form" class="mc-form subscribe-form" >
-					    <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email here" />
-					    <button id="mc-submit">subscribe</button>
+					    <input id="mc-email" type="email" autocomplete="off" placeholder="Nhập Email của bạn" />
+					    <button id="mc-submit">Đăng Kí</button>
 				    </form>
 				    <!-- mailchimp-alerts Start -->
 				    <div class="mailchimp-alerts text-centre">

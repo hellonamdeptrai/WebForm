@@ -8,12 +8,12 @@
         <!-- Page Banner -->
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
-                <h1>Login</h1>
+                <h1>ĐĂNG NHẬP</h1>
                 <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">ĐĂNG NHẬP</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,26 +41,26 @@
             <div class="col-md-6 col-12 d-flex">
                 <div class="ee-login">
                     
-                    <h3>Login to your account</h3>
-                    <p>E&E provide how all this mistaken idea of denouncing pleasure and sing pain born an will give you a complete account of the system, and expound</p>
+                    <h3>Đăng nhập tài khoản của bạn</h3>
+                    <p>Hãy đăng nhập và trải nghiệm dịch vụ của chúng tôi</p>
                     
                     <!-- Login Form -->
                     <form action="#">
                         <div class="row">
-                            <div class="col-12 mb-30"><input type="text" placeholder="Type your username or email address"></div>
-                            <div class="col-12 mb-20"><input type="password" placeholder="Enter your passward"></div>
+                            <div class="col-12 mb-30"><input type="text" placeholder="Tên đăng nhập hoặc địa chỉ Email"></div>
+                            <div class="col-12 mb-20"><input type="password" placeholder="Nhập mật khẩu"></div>
                             <div class="col-12 mb-15">
                                 
                                 <input type="checkbox" id="remember_me">
-                                <label for="remember_me">Remember me</label>
+                                <label for="remember_me">Lưu thông tin đăng nhập</label>
                                 
-                                <a href="#">Forgotten pasward?</a>
+                                <a href="#">Quên mật khẩu?</a>
                                 
                             </div>
-                            <div class="col-12"><input type="submit" value="LOGIN"></div>
+                            <div class="col-12"><input type="submit" value="Đăng nhập"></div>
                         </div>
                     </form>
-                    <h4>Don’t have account? please click <a href="register">Register</a></h4>
+                    <h4>Nếu bạn không có tài khoản? Hãy <a href="register">ĐĂNG KÍ</a></h4>
                     
                 </div>
             </div>
@@ -75,11 +75,11 @@
             <div class="col-md-5 col-12 d-flex">
                 
                 <div class="ee-social-login">
-                    <h3>Also you can login with...</h3>
+                    <h3>Đăng nhập bằng...</h3>
                     
-                    <a href="#" class="facebook-login">Login with <i class="fa fa-facebook"></i></a>
-                    <a href="#" class="twitter-login">Login with <i class="fa fa-twitter"></i></a>
-                    <a href="#" class="google-plus-login">Login with <i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="facebook-login">Đăng nhập bằng <i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter-login">Đăng nhập bằng <i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google-plus-login">Đăng nhập bằng <i class="fa fa-google-plus"></i></a>
                     
                 </div>
                 

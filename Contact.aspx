@@ -8,12 +8,12 @@
         <!-- Page Banner -->
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
-                <h1>Contact</h1>
+                <h1>LIÊN HỆ</h1>
                 <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,7 +39,7 @@
             
             <!-- Contact Page Title -->
             <div class="contact-page-title col mb-40">
-                <h1>Hi, Howdy <br>Let’s Connect us</h1>
+                <h1>Chào, Howdy <br>Hãy Kết nối với Chúng tôi</h1>
             </div>
         </div>
         <div class="row">
@@ -47,9 +47,9 @@
             <!-- Contact Tab List -->
             <div class="col-lg-4 col-12 mb-50">
                 <ul class="contact-tab-list nav">
-                    <li><a class="active" data-bs-toggle="tab" href="#contact-address">Contact us</a></li>
-                    <li><a data-bs-toggle="tab" href="#contact-form-tab">Leave us a message</a></li>
-                    <li><a data-bs-toggle="tab" href="#store-location">All Store location</a></li>
+                    <li><a class="active" data-bs-toggle="tab" href="#contact-address">Kết nối với chúng tôi</a></li>
+                    <li><a data-bs-toggle="tab" href="#contact-form-tab">Để lại cho chúng tôi một tin nhắn</a></li>
+                    <li><a data-bs-toggle="tab" href="#store-location">Tất cả vị trí Cửa hàng</a></li>
                 </ul>
             </div>
             
@@ -62,14 +62,14 @@
                        
                         <div class="col-lg-4 col-md-6 col-12 mb-50">
                             <div class="contact-information">
-                                <h4>Address</h4>
-                                <p>You address will be here Lorem Ipsum text</p>
+                                <h4>Địa chỉ</h4>
+                                <p>Địa chỉ:</p>
                             </div>
                         </div>
                        
                         <div class="col-lg-4 col-md-6 col-12 mb-50">
                             <div class="contact-information">
-                                <h4>Phone</h4>
+                                <h4>Điện thoại</h4>
                                 <p><a href="tel:01234567890">01234 567 890</a><a href="tel:01234567891">01234 567 891</a></p>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                         <div class="col-lg-4 col-md-6 col-12 mb-50">
                             <div class="contact-information">
                                 <h4>Web</h4>
-                                <p><a href="mailto:info@example.com">info@example.com</a><a href="#">www.example.com</a></p>
+                                <p><a href="mailto:nkockkibo@gmail.com">nkockkibo@gmail.com</a><a href="#">www.example.com</a></p>
                             </div>
                         </div>
                         

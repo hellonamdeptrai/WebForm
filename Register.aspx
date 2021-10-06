@@ -8,12 +8,12 @@
         <!-- Page Banner -->
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
-                <h1>Register</h1>
+                <h1>ĐĂNG KÍ</h1>
                 <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">Register</a></li>
+                        <li><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">ĐĂNG KÍ</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,17 +41,17 @@
             <div class="col-md-6 col-12 d-flex">
                 <div class="ee-register">
                     
-                    <h3>We will need for your registration</h3>
-                    <p>E&E provide how all this mistaken idea of denouncing pleasure and sing pain born an will give you a complete account of the system, and expound</p>
+                    <h3>Chúng tôi sẽ cần đăng ký của bạn</h3>
+                    <p>Bạn hãy đăng kí E&E sẽ cung cấp cho bạn một tài hoàn chỉnh</p>
                     
                     <!-- Register Form -->
                     <form action="#">
                         <div class="row">
-                            <div class="col-12 mb-30"><input type="text" placeholder="Your name here"></div>
-                            <div class="col-12 mb-30"><input type="email" placeholder="Your email here"></div>
-                            <div class="col-12 mb-30"><input type="password" placeholder="Enter passward"></div>
-                            <div class="col-12 mb-30"><input type="password" placeholder="Conform password"></div>
-                            <div class="col-12"><input type="submit" value="register"></div>
+                            <div class="col-12 mb-30"><input type="text" placeholder="Tên đăng nhập"></div>
+                            <div class="col-12 mb-30"><input type="email" placeholder="Email"></div>
+                            <div class="col-12 mb-30"><input type="password" placeholder="Mật khẩu"></div>
+                            <div class="col-12 mb-30"><input type="password" placeholder="Nhập lại mật khẩu"></div>
+                            <div class="col-12"><input type="submit" value="Đăng kí"></div>
                         </div>
                     </form>
                     
@@ -68,13 +68,13 @@
             <div class="col-md-5 col-12 d-flex">
                 
                 <div class="ee-account-image">
-                    <h3>Upload your Image</h3>
+                    <h3>Cập nhật ảnh đại diện</h3>
                     
                     <img src="assets/images/account-image-placeholder.jpg" alt="Account Image Placeholder" class="image-placeholder">
                     
                     <div class="account-image-upload">
                         <input type="file" name="chooseFile" id="account-image-upload">
-                        <label class="account-image-label" for="account-image-upload">Choose your image</label>
+                        <label class="account-image-label" for="account-image-upload">Chọn ảnh của bạn</label>
                     </div>
                     
                     <p>jpEG 250x250</p>

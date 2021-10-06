@@ -45,7 +45,7 @@
                         <div class="header-advance-search">
                         
                             <form action="#">
-                                <div class="input"><input type="text" placeholder="Search your product"/></div>
+                                <div class="input"><input type="text" placeholder="Tìm kiếm thiết bị"/></div>
                                 <div class="select">
                                     <select class="nice-select">
                                         <option>Tất cả danh mục</option>
@@ -96,10 +96,10 @@
                                     </li>
                                     <li class="menu-item-has-children"><a href="Product.aspx">Điện Thoại</a>
                                         <ul class="sub-menu">
-                                            <li><a href="shop-grid.html">shop grid</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html">shop grid Left Sidebar</a></li>
-                                            <li><a href="shop-grid-right-sidebar.html">shop grid Right Sidebar</a></li>
-                                            <li><a href="shop-grid-extended.html">shop grid Extended</a></li>
+                                            <li><a href="#">Iphone</a></li>
+                                            <li><a href="#">SamSung</a></li>
+                                            <li><a href="#">Xiaomi</a></li>
+                                            <li><a href="#">Khác</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="Product.aspx">Điện Thoại cũ</a>
@@ -135,7 +135,7 @@
         <!-- Mini Cart Top -->
         <div class="mini-cart-top">    
     
-            <button class="close-cart">Close Cart<i class="icofont icofont-close"></i></button>
+            <button class="close-cart">Đóng<i class="icofont icofont-close"></i></button>
         
         </div>
 
@@ -173,7 +173,7 @@
         <!-- Mini Cart Bottom -->
         <div class="mini-cart-bottom">    
     
-            <h4 class="sub-total">Total: <span>$1160</span></h4>
+            <h4 class="sub-total">Đơn giá: <span>$1160</span></h4>
 
             <div class="button">
                 <a href="Cart.aspx">ĐI ĐẾN GIỎ HÀNG</a>
@@ -203,7 +203,7 @@
                                 <img src="assets/images/logo.png" alt="E&E - Electronics eCommerce Bootstrap4 HTML Template">
                                 <img class="theme-dark" src="assets/images/logo-light.png" alt="E&E - Electronics eCommerce Bootstrap4 HTML Template">
                             </div>
-                            <p>Electronics product actual teachings of  he great explorer of the truth, the malder of human happiness. No one rejects</p>
+                            <p>Sản phẩm điện tử những lời dạy thực tế của ông là nhà thám hiểm vĩ đại về sự thật, sự sai lầm của hạnh phúc con người. Không ai từ chối</p>
                         </div>
                     </div>
                 </div><!-- Footer Widget End -->
@@ -214,22 +214,22 @@
                     <div class="col-lg-3 col-md-6 col-12 mb-40">
                         <div class="footer-widget">
                        
-                            <h4 class="widget-title">CONTACT INFO</h4>
+                            <h4 class="widget-title">THÔNG TIN LIÊN HỆ</h4>
                         
                             <p class="contact-info">
-                                <span>Address</span>
-                                You address will be here <br>
-                                 Lorem Ipsum text                        </p>
+                                <span>Địa Chỉ</span>
+                                 Địa chỉ 1:  <br>
+                                 Địa chỉ 2:                        </p>
                         
                             <p class="contact-info">
-                                <span>Phone</span>
+                                <span>Điện thoại</span>
                                 <a href="tel:01234567890">01234 567 890</a>
                                 <a href="tel:01234567891">01234 567 891</a>
                             </p>
                         
                             <p class="contact-info">
                                 <span>Web</span>
-                                <a href="mailto:info@example.com">info@example.com</a>
+                                <a href="mailto:nkockkibo@gmail.com">nkockkibo@gmail.com</a>
                                 <a href="#">www.example.com</a>
                             </p>
                         
@@ -240,17 +240,17 @@
                     <div class="col-lg-3 col-md-6 col-12 mb-40">
                         <div class="footer-widget">
                        
-                            <h4 class="widget-title">CUSTOMER CARE</h4>
+                            <h4 class="widget-title">CHĂM SÓC KHÁCH HÀNG</h4>
                         
                             <ul class="link-widget">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Cart</a></li>
-                                <li><a href="#">Checkout</a></li>
-                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="#">Tính năng</a></li>
+                                <li><a href="#">Tài khoản của tôi</a></li>
+                                <li><a href="#">Cửa hàng</a></li>
+                                <li><a href="#">Thủ tục thanh toán</a></li>
+                                <li><a href="#">Danh sách mong muốn</a></li>
                                 <li><a href="#">blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Kết nối</a></li>
                             </ul>
                         
                         </div>
@@ -260,17 +260,17 @@
                     <div class="col-lg-3 col-md-6 col-12 mb-40">
                         <div class="footer-widget">
                        
-                            <h4 class="widget-title">INFORMATION</h4>
+                            <h4 class="widget-title">THÔNG TIN</h4>
                         
                             <ul class="link-widget">
-                                <li><a href="#">Track your order</a></li>
-                                <li><a href="#">Locate Store</a></li>
-                                <li><a href="#">Online Support</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Payment</a></li>
-                                <li><a href="#">Shipping & Returns</a></li>
-                                <li><a href="#">Gift coupon</a></li>
-                                <li><a href="#">Special coupon</a></li>
+                                <li><a href="#">Theo dõi đơn đặt hàng của bạn</a></li>
+                                <li><a href="#">Định vị cửa hàng</a></li>
+                                <li><a href="#">Hỗ trợ trực tuyến</a></li>
+                                <li><a href="#">Điều khoản & Điều kiện</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Vận chuyển & Trả hàng</a></li>
+                                <li><a href="#">Phiếu giảm giá quà tặng</a></li>
+                                <li><a href="#">Phiếu giảm giá đặc biệt</a></li>
                             </ul>
                         
                         </div>
@@ -280,7 +280,7 @@
                     <div class="col-lg-3 col-md-6 col-12 mb-40">
                         <div class="footer-widget">
                        
-                            <h4 class="widget-title">LATEST TWEET</h4>
+                            <h4 class="widget-title">TWEET Mới Nhất</h4>
                         
                             <div class="footer-tweet"></div>
                         
