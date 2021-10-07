@@ -146,20 +146,20 @@
                   </li>
                   <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="user"></i><span>Người dùng</span></a>
                     <ul class="nav-submenu menu-content">
-                      <li><a href="index.html">Nhân viên</a></li>
-                      <li><a href="dashboard-02.html">Khách hàng</a></li>
+                      <li><a href="Personnel.aspx">Nhân viên</a></li>
+                      <li><a href="Customer.aspx">Khách hàng</a></li>
                     </ul>
                   </li>
-                  <li><a class="nav-link" href="javascript:void(0)"><i data-feather="box"></i><span>Sản phẩm</span></a>
+                  <li><a class="nav-link" href="Product.aspx"><i data-feather="box"></i><span>Sản phẩm</span></a>
                   </li>
-                  <li><a class="nav-link" href="javascript:void(0)"><i data-feather="layout"></i><span>Danh mục</span></a>
+                  <li><a class="nav-link" href="Category.aspx"><i data-feather="layout"></i><span>Danh mục</span></a>
                   </li>
                   <li class="sidebar-main-title">
                     <div>
                       <h6>Tùy chọn</h6>
                     </div>
                   </li>
-                  <li><a class="nav-link" href="javascript:void(0)"><i data-feather="home"></i><span>Trang chủ bán hàng</span></a>
+                  <li><a class="nav-link" href="../Default.aspx"><i data-feather="home"></i><span>Trang chủ bán hàng</span></a>
                   </li>
                 </ul>
               </div>
