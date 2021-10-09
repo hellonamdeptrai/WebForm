@@ -15,6 +15,7 @@
                 <!-- Bookmark Start-->
                 <div class="bookmark">
                 <ul>
+                    <li><a href="CreateCustomer.aspx"><i data-feather="plus"></i></a></li>
                     <li><a href="javascript:void(0)"><i class="bookmark-search" data-feather="search"></i></a>
                     <form class="form-inline search-form">
                         <div class="form-group form-control-search">

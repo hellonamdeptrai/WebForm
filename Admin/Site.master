@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/date-picker.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/prism.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vector-map.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/summernote.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
@@ -224,6 +225,10 @@
     <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
     <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
     <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+      <script src="../assets/js/jquery.ui.min.js"></script>
+      <script src="../assets/js/editor/summernote/summernote.js"></script>
+    <script src="../assets/js/editor/summernote/summernote.custom.js"></script>
+      <script src="../assets/js/tooltip-init.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
