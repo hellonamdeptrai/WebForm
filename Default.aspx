@@ -143,7 +143,8 @@
                             <div class="product-slider-wrap product-slider-arrow-one">
                                 <!-- Product Slider Start -->
                                 <div class="product-slider product-slider-4 row">
-                                
+                                <% foreach (Student st in listsv)
+                                   { %>>
                                     <div class="col pb-20 pt-10">
                                         <!-- Product Start -->
                                         <div class="ee-product">
@@ -169,7 +170,7 @@
                                                 <div class="category-title">
 
                                                     <a href="#" class="cat">Laptop</a>
-                                                    <h5 class="title"><a href="single-product.html">Zeon Zen 4 Pro</a></h5>
+                                                    <h5 class="title"><a href="single-product.html"><%: st.FirstName %></a></h5>
 
                                                 </div>
 
@@ -191,201 +192,7 @@
 
                                         </div><!-- Product End -->
                                     </div>
-
-                                    <div class="col pb-20 pt-10">
-                                        <!-- Product Start -->
-                                        <div class="ee-product">
-
-                                            <!-- Image -->
-                                            <div class="image">
-
-                                                <span class="label sale">sale</span>
-
-                                                <a href="single-product.html" class="img"><img src="assets/images/product/product-2.png" alt="Product Image"></a>
-
-                                                <div class="wishlist-compare">
-                                                    <a href="#" data-tooltip="Compare"><i class="ti-control-shuffle"></i></a>
-                                                    <a href="#" data-tooltip="Wishlist"><i class="ti-heart"></i></a>
-                                                </div>
-
-                                                <a href="#" class="add-to-cart"><i class="ti-shopping-cart"></i><span>ADD TO CART</span></a>
-
-                                            </div>
-
-                                            <!-- Content -->
-                                            <div class="content">
-
-                                                <!-- Category & Title -->
-                                                <div class="category-title">
-
-                                                    <a href="#" class="cat">Drone</a>
-                                                    <h5 class="title"><a href="single-product.html">Aquet Drone D 420</a></h5>
-
-                                                </div>
-
-                                                <!-- Price & Ratting -->
-                                                <div class="price-ratting">
-
-                                                    <h5 class="price"><span class="old">$350</span>$275.00</h5>
-                                                    <div class="ratting">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div><!-- Product End -->
-                                    </div>
-
-                                    <div class="col pb-20 pt-10">
-                                        <!-- Product Start -->
-                                        <div class="ee-product">
-
-                                            <!-- Image -->
-                                            <div class="image">
-
-                                                <a href="single-product.html" class="img"><img src="assets/images/product/product-3.png" alt="Product Image"></a>
-
-                                                <div class="wishlist-compare">
-                                                    <a href="#" data-tooltip="Compare"><i class="ti-control-shuffle"></i></a>
-                                                    <a href="#" data-tooltip="Wishlist"><i class="ti-heart"></i></a>
-                                                </div>
-
-                                                <a href="#" class="add-to-cart"><i class="ti-shopping-cart"></i><span>ADD TO CART</span></a>
-
-                                            </div>
-
-                                            <!-- Content -->
-                                            <div class="content">
-
-                                                <!-- Category & Title -->
-                                                <div class="category-title">
-
-                                                    <a href="#" class="cat">Games</a>
-                                                    <h5 class="title"><a href="single-product.html">Game Station X 22</a></h5>
-
-                                                </div>
-
-                                                <!-- Price & Ratting -->
-                                                <div class="price-ratting">
-
-                                                    <h5 class="price">$295.00</h5>
-                                                    <div class="ratting">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div><!-- Product End -->
-                                    </div>
-
-                                    <div class="col pb-20 pt-10">
-                                        <!-- Product Start -->
-                                        <div class="ee-product">
-
-                                            <!-- Image -->
-                                            <div class="image">
-
-                                                <a href="single-product.html" class="img"><img src="assets/images/product/product-4.png" alt="Product Image"></a>
-
-                                                <div class="wishlist-compare">
-                                                    <a href="#" data-tooltip="Compare"><i class="ti-control-shuffle"></i></a>
-                                                    <a href="#" data-tooltip="Wishlist"><i class="ti-heart"></i></a>
-                                                </div>
-
-                                                <a href="#" class="add-to-cart"><i class="ti-shopping-cart"></i><span>ADD TO CART</span></a>
-
-                                            </div>
-
-                                            <!-- Content -->
-                                            <div class="content">
-
-                                                <!-- Category & Title -->
-                                                <div class="category-title">
-
-                                                    <a href="#" class="cat">Accessories</a>
-                                                    <h5 class="title"><a href="single-product.html">Roxxe Headphone Z 75</a></h5>
-
-                                                </div>
-
-                                                <!-- Price & Ratting -->
-                                                <div class="price-ratting">
-
-                                                    <h5 class="price">$110.00</h5>
-                                                    <div class="ratting">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div><!-- Product End -->
-                                    </div>
-
-                                    <div class="col pb-20 pt-10">
-                                        <!-- Product Start -->
-                                        <div class="ee-product">
-
-                                            <!-- Image -->
-                                            <div class="image">
-
-                                                <a href="single-product.html" class="img"><img src="assets/images/product/product-5.png" alt="Product Image"></a>
-
-                                                <div class="wishlist-compare">
-                                                    <a href="#" data-tooltip="Compare"><i class="ti-control-shuffle"></i></a>
-                                                    <a href="#" data-tooltip="Wishlist"><i class="ti-heart"></i></a>
-                                                </div>
-
-                                                <a href="#" class="add-to-cart"><i class="ti-shopping-cart"></i><span>ADD TO CART</span></a>
-
-                                            </div>
-
-                                            <!-- Content -->
-                                            <div class="content">
-
-                                                <!-- Category & Title -->
-                                                <div class="category-title">
-
-                                                    <a href="#" class="cat">Camera</a>
-                                                    <h5 class="title"><a href="single-product.html">Mony Handycam Z 105</a></h5>
-
-                                                </div>
-
-                                                <!-- Price & Ratting -->
-                                                <div class="price-ratting">
-
-                                                    <h5 class="price">$110.00</h5>
-                                                    <div class="ratting">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div><!-- Product End -->
-                                    </div>
-
+                                    <%} %>>
                                 </div><!-- Product Slider End -->
                             </div><!-- Product Slider Wrap End -->
                         

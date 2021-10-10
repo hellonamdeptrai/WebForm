@@ -32,9 +32,17 @@
                           </div>
                         </div>
                       </div>
+                        <div class="row">
+                        <div class="col">
+                          <div class="mb-3">
+                            <label class="form-label" for="name">Mô tả danh mục</label>
+                              <asp:TextBox class="form-control" ID="description" placeholder="Nhập mô tả danh mục..." runat="server"></asp:TextBox>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="card-footer text-end">
-                        <asp:Button class="btn btn-primary" type="submit" ID="Button1" runat="server" Text="Thêm" />
+                        <asp:Button class="btn btn-primary" type="submit" ID="Button1" runat="server" Text="Thêm" OnClick="Button1_Click" />
                       <input class="btn btn-light" type="reset" value="Xóa form"/>
                     </div>
                   </form>
