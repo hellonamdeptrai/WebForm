@@ -6,36 +6,30 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 
-public partial class Admin_CreateCategory : System.Web.UI.Page
+public partial class Admin_DeleteCategory : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
-    }
-    protected void Button1_Click(object sender, EventArgs e)
-    {
+        int id = Int32.Parse(Request.QueryString["id"]);
+        int page = Int32.Parse(Request.QueryString["page"]);
         SqlConnection con = Connection.SqlConnectServer();
         try
         {
             con.Open();
+
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.CommandText = "CreateCategories";
-            cmd.Parameters.Add(new SqlParameter("@Name", name.Text));
-            cmd.Parameters.Add(new SqlParameter("@Slug", Packet.GenerateSlug(name.Text)));
-            cmd.Parameters.Add(new SqlParameter("@Description", description.Text));
-            cmd.Parameters.Add(new SqlParameter("@Date_created", DateTime.Now.Date.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@Date_edit", DateTime.Now.Date.ToString()));
+            cmd.CommandText = "DeleteCategories";
+            cmd.Parameters.Add(new SqlParameter("@Id", id));
 
             cmd.ExecuteNonQuery();
             con.Close();
-            Response.Redirect("Category.aspx?p=1");
+            Response.Redirect("Category.aspx?p="+page);
         }
         catch (Exception ex)
         {
             ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + ex.Message + "');", true);
         }
-
     }
 }

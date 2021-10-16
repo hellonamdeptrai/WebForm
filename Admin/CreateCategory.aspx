@@ -27,8 +27,9 @@
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="name">Tên danh mục</label>
+                            <label class="form-label" for="name">Tên danh mục *</label>
                               <asp:TextBox class="form-control" ID="name" placeholder="Nhập tên danh mục..." runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Tên danh mục không được để trống" Display="Dynamic" ControlToValidate="name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>

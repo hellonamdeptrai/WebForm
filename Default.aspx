@@ -144,7 +144,7 @@
                                 <!-- Product Slider Start -->
                                 <div class="product-slider product-slider-4 row">
                                 <% foreach (Student st in listsv)
-                                   { %>>
+                                   { %>
                                     <div class="col pb-20 pt-10">
                                         <!-- Product Start -->
                                         <div class="ee-product">

@@ -27,14 +27,23 @@
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="name">Tên danh mục</label>
+                            <label class="form-label" for="name">Tên danh mục *</label>
                               <asp:TextBox class="form-control" ID="name" placeholder="Nhập tên danh mục..." runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Tên danh mục không được để trống" Display="Dynamic" ControlToValidate="name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="row">
+                        <div class="col">
+                          <div class="mb-3">
+                            <label class="form-label" for="name">Mô tả danh mục</label>
+                              <asp:TextBox class="form-control" ID="description" placeholder="Nhập mô tả danh mục..." runat="server"></asp:TextBox>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="card-footer text-end">
-                        <asp:Button class="btn btn-primary" type="submit" ID="Button1" runat="server" Text="Thêm" />
+                        <asp:Button class="btn btn-primary" type="submit" ID="Button1" runat="server" Text="Sửa" OnClick="Button1_Click" />
                       <input class="btn btn-light" type="reset" value="Xóa form"/>
                     </div>
                   </form>
