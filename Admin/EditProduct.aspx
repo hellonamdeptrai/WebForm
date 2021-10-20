@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Site.master" AutoEventWireup="true" CodeFile="EditProduct.aspx.cs" Inherits="Admin_EditProduct" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Site.master" AutoEventWireup="true" CodeFile="EditProduct.aspx.cs" Inherits="Admin_EditProduct" ValidateRequest="false"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <div class="container-fluid">
@@ -27,30 +27,28 @@
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="name">Tên sản phẩm</label>
+                            <label class="form-label" for="name">Tên sản phẩm *</label>
                               <asp:TextBox class="form-control" ID="name" placeholder="Nhập tên sản phẩm..." runat="server"></asp:TextBox>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Tên không được để trống" Display="Dynamic" ControlToValidate="name" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="brand">Thương hiệu</label>
+                            <label class="form-label" for="brand">Thương hiệu *</label>
                               <asp:TextBox class="form-control" ID="brand" placeholder="Nhập tên thương hiệu..." runat="server"></asp:TextBox>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator3" runat="server" ErrorMessage="Thương hiệu không được để trống" Display="Dynamic" ControlToValidate="brand" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="exampleFormControlSelect9">Danh mục</label>
-                              <asp:DropDownList class="form-select digits" ID="DropDownList1" runat="server">
-                                  <asp:ListItem Selected="True" Value="White"> White </asp:ListItem>
-                                  <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                  <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                  <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                  <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
+                            <label class="form-label" for="listcategory">Danh mục *</label>
+                              <asp:DropDownList class="form-select digits" ID="listcategory" runat="server">
                               </asp:DropDownList>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator8" runat="server" ErrorMessage="Danh mục không được để trống" Display="Dynamic" ControlToValidate="listcategory" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
 
@@ -58,76 +56,86 @@
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="brand">Giá gốc</label>
-                              <asp:TextBox class="form-control" ID="TextBox1" placeholder="Nhập tên giá gốc..." runat="server" TextMode="Number"></asp:TextBox>
+                            <label class="form-label" for="originprice">Giá gốc *</label>
+                              <asp:TextBox class="form-control" ID="originprice" placeholder="Nhập tên giá gốc..." runat="server" TextMode="Number"></asp:TextBox>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator5" runat="server" ErrorMessage="Giá gốc không được để trống" Display="Dynamic" ControlToValidate="originprice" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="brand">Giá bán</label>
-                              <asp:TextBox class="form-control" ID="TextBox2" placeholder="Nhập tên giá bán..." runat="server" TextMode="Number"></asp:TextBox>
+                            <label class="form-label" for="saleprice">Giá bán *</label>
+                              <asp:TextBox class="form-control" ID="saleprice" placeholder="Nhập tên giá bán..." runat="server" TextMode="Number"></asp:TextBox>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator6" runat="server" ErrorMessage="Giá bán không được để trống" Display="Dynamic" ControlToValidate="saleprice" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="brand">Avatar</label>
-                              <asp:FileUpload class="form-control" ID="FileUpload1" runat="server" />
+                            <label class="form-label" for="avatar">Avatar</label>
+                              <asp:FileUpload class="form-control" ID="avatar" runat="server" />
+                              <asp:Image class="rounded py-3" ID="avtarpreview" runat="server" Width="200"/>
                           </div>
                         </div>
                       </div>
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="brand">Hình ảnh điện thoại</label>
-                               <asp:FileUpload class="form-control" ID="FileUpload2" runat="server" />
+                            <label class="form-label" for="images">Hình ảnh điện thoại</label>
+                               <asp:FileUpload class="form-control" ID="images" runat="server" AllowMultiple="True" />
+                              <%foreach (var item in listImages)
+                                {  %>
+                              <img class="rounded py-3" src="../Images/<%: item.ToString() %>" alt="Avatar" width="200"/>
+                              <%} %>
                           </div>
                         </div>
                       </div>
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="exampleFormControlSelect9">Trạng thái</label>
-                              <asp:DropDownList class="form-select digits" ID="DropDownList2" runat="server">
-                                  <asp:ListItem Selected="True" Value="White"> White </asp:ListItem>
-                                  <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                                  <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                                  <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                                  <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
+                            <label class="form-label" for="status">Trạng thái *</label>
+                              <asp:DropDownList class="form-select digits" ID="status" runat="server">
+                                  <asp:ListItem Value="1"> Đang nhập </asp:ListItem>
+                                  <asp:ListItem Value="2"> Mở bán </asp:ListItem>
+                                  <asp:ListItem Value="3"> Cũ </asp:ListItem>
+                                  <asp:ListItem Value="4"> Hết hàng </asp:ListItem>
                               </asp:DropDownList>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator4" runat="server" ErrorMessage="Trạng thái không được để trống" Display="Dynamic" ControlToValidate="status" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="exampleFormControlSelect9">Thông tin khuyến mại</label>
-                              <asp:TextBox class="summernote" ID="TextBox3" runat="server" TextMode="MultiLine"></asp:TextBox>
+                            <label class="form-label" for="promotion">Thông tin khuyến mại *</label>
+                              <asp:TextBox class="summernote" ID="promotion" runat="server" TextMode="MultiLine"></asp:TextBox>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator9" runat="server" ErrorMessage="Thông tin khuyến mại không được để trống" Display="Dynamic" ControlToValidate="promotion" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="exampleFormControlSelect9">Thông số kỹ thuật</label>
-                              <asp:TextBox class="summernote" ID="TextBox4" runat="server" TextMode="MultiLine"></asp:TextBox>
+                            <label class="form-label" for="specifications">Thông số kỹ thuật *</label>
+                              <asp:TextBox class="summernote" ID="specifications" runat="server" TextMode="MultiLine"></asp:TextBox>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator11" runat="server" ErrorMessage="Thông số không được để trống" Display="Dynamic" ControlToValidate="specifications" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                         <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label class="form-label" for="exampleFormControlSelect9">Mô tả điện thoại</label>
-                              <asp:TextBox class="summernote" ID="TextBox5" runat="server" TextMode="MultiLine"></asp:TextBox>
+                            <label class="form-label" for="content">Mô tả điện thoại *</label>
+                              <asp:TextBox class="summernote" ID="content" runat="server" TextMode="MultiLine" ControlToValidate="content"></asp:TextBox>
+                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator10" runat="server" ErrorMessage="Mô tả không được để trống" Display="Dynamic" ControlToValidate="content" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="card-footer text-end">
-                        <asp:Button class="btn btn-primary" type="submit" ID="Button1" runat="server" Text="Thêm" />
+                        <asp:Button class="btn btn-primary" type="submit" ID="Button1" runat="server" Text="Sửa" OnClick="Button1_Click" />
                       <input class="btn btn-light" type="reset" value="Xóa form"/>
                     </div>
                   </form>
