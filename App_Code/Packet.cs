@@ -5,6 +5,7 @@ using System.Web;
 using System.Text;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
+using System.IO;
 
 /// <summary>
 /// Summary description for Packet
@@ -73,5 +74,24 @@ public class Packet
         }
 
         return listPage;
+    }
+
+    public static bool CheckFileType(string fileName)
+    {
+
+        string ext = Path.GetExtension(fileName);
+        switch (ext.ToLower())
+        {
+            case ".gif":
+                return true;
+            case ".png":
+                return true;
+            case ".jpg":
+                return true;
+            case ".jpeg":
+                return true;
+            default:
+                return false;
+        }
     }
 }
