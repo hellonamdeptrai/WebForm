@@ -64,8 +64,19 @@
                     <div class="col order-2 order-lg-12 mt-10 mb-10">
                         <!-- Header Account Links Start -->
                         <div class="header-account-links">
+                            <% if (Session["LoginSession"] == null)
+                               {%>
                             <a href="Register.aspx"><i class="icofont icofont-user-alt-7"></i> <span>Đăng ký</span></a>
                             <a href="Login.aspx"><i class="icofont icofont-login d-none"></i> <span>Đăng nhập</span></a>
+                            <% }
+                               else
+                               {
+                                    foreach (Personnel item in (List<Personnel>)Session["LoginSession"])
+                                    {%>
+                            <a href="Profile.aspx?id=<%: item.Id %>"><i class="icofont icofont-user-alt-7"></i> <span><%: item.Name %></span></a>
+                            <a href="Logout.aspx"><i class="icofont icofont-login d-none"></i> <span>Đăng xuất</span></a>
+                            <%      } 
+                              }%>
                         </div><!-- Header Account Links End -->
                     </div>
 
