@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
-<!-- Page Banner Section Start -->
+    <!-- Page Banner Section Start -->
 <div class="page-banner-section section">
     <div class="page-banner-wrap row row-0 d-flex align-items-center ">
 
@@ -45,22 +45,25 @@
                     <p>Hãy đăng nhập và trải nghiệm dịch vụ của chúng tôi</p>
                     
                     <!-- Login Form -->
-                    <form action="#">
+                    <form runat="server">
                         <div class="row">
-                            <div class="col-12 mb-30"><input type="text" placeholder="Tên đăng nhập hoặc địa chỉ Email"></div>
-                            <div class="col-12 mb-20"><input type="password" placeholder="Nhập mật khẩu"></div>
+                            <asp:TextBox class="col-12 mb-30" ID="email" runat="server" placeholder="Địa chỉ Email"></asp:TextBox>
+                            <asp:TextBox class="col-12 mb-30" ID="password" runat="server" placeholder="Nhập mật khẩu" TextMode="Password"></asp:TextBox>
+                            <asp:Label class="mb-2" ID="errLogin" runat="server" ForeColor="#CC0000"></asp:Label>
                             <div class="col-12 mb-15">
                                 
-                                <input type="checkbox" id="remember_me">
-                                <label for="remember_me">Lưu thông tin đăng nhập</label>
+                                <asp:CheckBox ID="saveLogin" runat="server" />
+                                <label for="MainContent_saveLogin">Lưu thông tin đăng nhập</label>
                                 
                                 <a href="#">Quên mật khẩu?</a>
                                 
                             </div>
-                            <div class="col-12"><input type="submit" value="Đăng nhập"></div>
+                            <div class="col-12">
+                                <asp:Button ID="Button1" runat="server" Text="Đăng nhập" OnClick="Button1_Click" />
+                            </div>
                         </div>
                     </form>
-                    <h4>Nếu bạn không có tài khoản? Hãy <a href="register">ĐĂNG KÍ</a></h4>
+                    <h4>Nếu bạn không có tài khoản? Hãy <a href="Register.aspx">ĐĂNG KÝ</a></h4>
                     
                 </div>
             </div>
@@ -76,11 +79,10 @@
                 
                 <div class="ee-social-login">
                     <h3>Đăng nhập bằng...</h3>
-                    
-                    <a href="#" class="facebook-login">Đăng nhập bằng <i class="fa fa-facebook"></i></a>
-                    <a href="#" class="twitter-login">Đăng nhập bằng <i class="fa fa-twitter"></i></a>
-                    <a href="#" class="google-plus-login">Đăng nhập bằng <i class="fa fa-google-plus"></i></a>
-                    
+                    <% if (Request.Cookies["LoginCookie"] != null)
+                       { %>
+                    <a onclick="document.getElementById('MainContent_email').value = '<%: Request.Cookies["LoginCookie"]["email"] %>'" class="facebook-login"><%: Request.Cookies["LoginCookie"]["email"] %> <i class="fa fa-user"></i></a>
+                    <% } %>
                 </div>
                 
             </div>
