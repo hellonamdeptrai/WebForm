@@ -26,7 +26,7 @@ public partial class Admin_Personnel : System.Web.UI.Page
             SqlCommand cmdT = new SqlCommand();
             cmdT.Connection = con;
             cmdT.CommandType = System.Data.CommandType.StoredProcedure;
-            cmdT.CommandText = "CountUser";
+            cmdT.CommandText = "CountPersonnel";
 
             cmdT.ExecuteNonQuery();
             SqlDataReader dataT = cmdT.ExecuteReader();
@@ -38,7 +38,7 @@ public partial class Admin_Personnel : System.Web.UI.Page
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.CommandText = "PageUser";
+            cmd.CommandText = "PagePersonnel";
             cmd.Parameters.Add(new SqlParameter("@PageNumber", page));
             cmd.Parameters.Add(new SqlParameter("@RowsOfPage", pageSize));
 

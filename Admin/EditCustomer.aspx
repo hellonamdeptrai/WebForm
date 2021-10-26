@@ -87,7 +87,6 @@
                           <div class="mb-3">
                             <label class="form-label" for="Avatar">Avatar *</label>
                               <asp:FileUpload class="form-control" ID="Avatar" runat="server" />
-                              <asp:RequiredFieldValidator class="form-text" ID="RequiredFieldValidator6" runat="server" ErrorMessage="Avatar không được để trống" Display="Dynamic" ControlToValidate="Avatar" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                               <asp:Image ID="Previewimage" runat="server" />
                           </div>
                         </div>

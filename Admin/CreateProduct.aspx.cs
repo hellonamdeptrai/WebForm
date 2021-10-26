@@ -70,7 +70,10 @@ public partial class Admin_CreateProduct : System.Web.UI.Page
             cmd.Parameters.Add(new SqlParameter("@Promotion", promotion.Text.ToString()));
             cmd.Parameters.Add(new SqlParameter("@Specifications", specifications.Text.ToString()));
             cmd.Parameters.Add(new SqlParameter("@Content", content.Text.ToString()));
-            cmd.Parameters.Add(new SqlParameter("@User_id", 1));
+            foreach (Personnel item in (List<Personnel>)Session["LoginSession"])
+            {
+                cmd.Parameters.Add(new SqlParameter("@User_id", item.Id));
+            }
             cmd.Parameters.Add(new SqlParameter("@Category_id", listcategory.SelectedItem.Value));
             cmd.Parameters.Add(new SqlParameter("@Status", status.SelectedItem.Value));
             cmd.Parameters.Add(new SqlParameter("@Date_created", DateTime.Now.Date.ToString()));
