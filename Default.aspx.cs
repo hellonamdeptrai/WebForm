@@ -114,7 +114,7 @@ public partial class _Default : Page
             SqlCommand cmd4 = new SqlCommand();
             cmd4.Connection = con;
             cmd4.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd4.CommandText = "ProductsRAND";
+            cmd4.CommandText = "ProductsNew";
 
             cmd4.ExecuteNonQuery();
 

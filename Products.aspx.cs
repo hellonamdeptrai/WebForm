@@ -16,7 +16,7 @@ public partial class Products : System.Web.UI.Page
     public int page;
     public int cp = 1;
     public int checkPage = 0;
-    int id = 0;
+    public int id = 0;
     public string slug = null;
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -165,7 +165,7 @@ public partial class Products : System.Web.UI.Page
                     SqlCommand cmdT = new SqlCommand();
                     cmdT.Connection = con;
                     cmdT.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmdT.CommandText = "CountProduct";
+                    cmdT.CommandText = "CountProductSell";
 
                     cmdT.ExecuteNonQuery();
                     SqlDataReader dataT = cmdT.ExecuteReader();
@@ -178,7 +178,7 @@ public partial class Products : System.Web.UI.Page
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd.CommandText = "PageProducts";
+                    cmd.CommandText = "PageProductsSell";
                     cmd.Parameters.Add(new SqlParameter("@PageNumber", page));
                     cmd.Parameters.Add(new SqlParameter("@RowsOfPage", pageSize));
 

@@ -200,7 +200,7 @@
             
                 <!-- Section Title Start -->
                 <div class="col-12 mb-40">
-                    <div class="section-title-one" data-title="ĐIỆN THOẠI ĐỀ SUẤT"><h1>Điện thoại đề suất</h1></div>
+                    <div class="section-title-one" data-title="ĐIỆN THOẠI SẮP BÁN"><h1>Điện thoại sắp bán</h1></div>
                 </div><!-- Section Title End -->
             
                 <div class="col-12">
@@ -249,37 +249,4 @@
         </div>
     </div><!-- New Arrival Product Section End -->
 
-    <!-- Subscribe Section Start -->
-    <div class="subscribe-section section bg-gray pt-55 pb-55">
-        <div class="container">
-            <div class="row align-items-center">
-            
-                <!-- Mailchimp Subscribe Content Start -->
-                <div class="col-lg-6 col-12 mb-15 mt-15">
-                    <div class="subscribe-content">
-                        <h2>ĐĂNG KÍ <span>‎‎BẢN TIN CỦA CHÚNG TÔI‎</span></h2>
-                        <h2>ĐỂ CÓ ĐƯỢC<span> SẢN PHẨM MỚI NHẤT</span></h2>
-                    </div>
-                </div><!-- Mailchimp Subscribe Content End -->
-            
-            
-                <!-- Mailchimp Subscribe Form Start -->
-                <div class="col-lg-6 col-12 mb-15 mt-15">
-                
-				    <form id="mc-form" class="mc-form subscribe-form" >
-					    <input id="mc-email" type="email" autocomplete="off" placeholder="Nhập Email của bạn" />
-					    <button id="mc-submit">Đăng Kí</button>
-				    </form>
-				    <!-- mailchimp-alerts Start -->
-				    <div class="mailchimp-alerts text-centre">
-					    <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-					    <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-					    <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-				    </div><!-- mailchimp-alerts end -->
-                
-                </div><!-- Mailchimp Subscribe Form End -->
-            
-            </div>
-        </div>
-    </div><!-- Subscribe Section End -->
 </asp:Content>

@@ -90,7 +90,7 @@
                                 <a class="page-link" href="Products.aspx?slug=old&p=<%: page-1 %>"><i class="fa fa-angle-left"></i></a>
                                 <% } else if (checkPage == 2)
                                    {%>
-                                <a class="page-link" href="Products.aspx?id=1&slug=<%: slug %>&p=<%: page-1 %>"><i class="fa fa-angle-left"></i></a>
+                                <a class="page-link" href="Products.aspx?id=<%: id %>&slug=<%: slug %>&p=<%: page-1 %>"><i class="fa fa-angle-left"></i></a>
                                 <% } else if (checkPage == 3)
                                    {%>
                                 <a class="page-link" href="Products.aspx?&p=<%: page-1 %>"><i class="fa fa-angle-left"></i></a>
@@ -101,13 +101,13 @@
                                 cp++; %>
                             <% if (checkPage == 1)
                                 { %>
-                            <li class="<%: item==page?"active":"" %>"><a href="Products.aspx?slug=old&p=<%: page %>"><%: item %></a></li>
+                            <li class="<%: item==page?"active":"" %>"><a href="Products.aspx?slug=old&p=<%: item %>"><%: item %></a></li>
                             <% } else if (checkPage == 2)
                                 {%>
-                            <li class="<%: item==page?"active":"" %>"><a href="Products.aspx?id=1&slug=<%: slug %>&p=<%: page %>"><%: item %></a></li>
+                            <li class="<%: item==page?"active":"" %>"><a href="Products.aspx?id=<%: id %>&slug=<%: slug %>&p=<%: item %>"><%: item %></a></li>
                             <% } else if (checkPage == 3)
                                 {%>
-                            <li class="<%: item==page?"active":"" %>"><a href="Products.aspx?&p=<%: page %>"><%: item %></a></li>
+                            <li class="<%: item==page?"active":"" %>"><a href="Products.aspx?&p=<%: item %>"><%: item %></a></li>
                             <% }%>
                             <%} %>
                             <li class="page-item <%: page+1==cp?"disabled":"" %>" >
@@ -116,7 +116,7 @@
                                 <a class="page-link" href="Products.aspx?slug=old&p=<%: page+1 %>"><i class="fa fa-angle-right"></i></a>
                                 <% } else if (checkPage == 2)
                                    {%>
-                                <a class="page-link" href="Products.aspx?id=1&slug=<%: slug %>&p=<%: page+1 %>"><i class="fa fa-angle-right"></i></a>
+                                <a class="page-link" href="Products.aspx?id=<%: id %>&slug=<%: slug %>&p=<%: page+1 %>"><i class="fa fa-angle-right"></i></a>
                                 <% } else if (checkPage == 3)
                                    {%>
                                 <a class="page-link" href="Products.aspx?&p=<%: page+1 %>"><i class="fa fa-angle-right"></i></a>
