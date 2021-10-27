@@ -31,8 +31,8 @@ public partial class Admin_EditPersonnel : System.Web.UI.Page
                 name.Text = data["Name"].ToString();
                 Email.Text = data["Email"].ToString();
                 Previewimage.ImageUrl = "../Images/" + data["Avatar"].ToString();
-                Status.SelectedItem.Value = data["Status"].ToString();
-                Position.SelectedItem.Value = data["Position"].ToString();
+                Status.Text = data["Status"].ToString();
+                Position.Text = data["Position"].ToString();
                 Phone.Text = data["Phone"].ToString();
                 Address.Text = data["Address"].ToString();
                 data.Close();

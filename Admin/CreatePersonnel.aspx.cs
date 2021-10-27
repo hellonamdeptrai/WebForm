@@ -35,7 +35,7 @@ public partial class Admin_CreatePersonnel : System.Web.UI.Page
             }
             if (Status.SelectedItem.Selected)
             {
-                status = Position.SelectedItem.Value;
+                status = Status.SelectedItem.Value;
             }
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;

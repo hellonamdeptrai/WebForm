@@ -32,37 +32,43 @@ public partial class Login : System.Web.UI.Page
             SqlDataReader data = cmd.ExecuteReader();
             if (data.Read())
             {
-                Personnel us = new Personnel();
-                us.Id = data["Id"].ToString();
-                us.Name = data["Name"].ToString();
-                us.Email = data["Email"].ToString();
-                us.Avatar = data["Avatar"].ToString();
-                us.Status = data["Status"].ToString();
-                us.Position = data["Position"].ToString();
-                us.Phone = data["Phone"].ToString();
-                us.Address = data["Address"].ToString();
-                listUser.Add(us);
-
-                Session["LoginSession"] = listUser;
-
-                if (saveLogin.Checked)
+                if (data["Status"].ToString().Equals("1"))
                 {
-                    HttpCookie ck = Request.Cookies["LoginCookie"];
-                    if (ck == null)
-                        ck = new HttpCookie("LoginCookie");
-                    ck["email"] = data["Email"].ToString();
-                    Response.Cookies.Add(ck);
-                }
-                if (data["Position"].ToString().Equals("3"))
-                {
-                    Response.Redirect("Default.aspx");
+                    Personnel us = new Personnel();
+                    us.Id = data["Id"].ToString();
+                    us.Name = data["Name"].ToString();
+                    us.Email = data["Email"].ToString();
+                    us.Avatar = data["Avatar"].ToString();
+                    us.Status = data["Status"].ToString();
+                    us.Position = data["Position"].ToString();
+                    us.Phone = data["Phone"].ToString();
+                    us.Address = data["Address"].ToString();
+                    listUser.Add(us);
+
+                    Session["LoginSession"] = listUser;
+
+                    if (saveLogin.Checked)
+                    {
+                        HttpCookie ck = Request.Cookies["LoginCookie"];
+                        if (ck == null)
+                            ck = new HttpCookie("LoginCookie");
+                        ck["email"] = data["Email"].ToString();
+                        Response.Cookies.Add(ck);
+                    }
+                    if (data["Position"].ToString().Equals("3"))
+                    {
+                        Response.Redirect("Default.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("Admin/Default.aspx");
+                    }
+
                 }
                 else
                 {
-                    Response.Redirect("Admin/Default.aspx");
+                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Tài khoản này đã bị khóa');", true);
                 }
-
-
             }
             else
                 errLogin.Text = "Sai tên email hoặc mật khẩu, vui lòng kiểm tra lại";
