@@ -90,6 +90,7 @@ public partial class Admin_Product : System.Web.UI.Page
                     Product pr = new Product();
                     pr.Id = data["Id"].ToString();
                     pr.Name = data["Name"].ToString();
+                    pr.Slug = data["Slug"].ToString();
                     pr.Brand = data["Brand"].ToString();
                     pr.SalePrice = double.Parse(data["Sale_Price"].ToString()).ToString("#,###", cul.NumberFormat);
                     pr.Avatar = data["Avatar"].ToString();

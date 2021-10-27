@@ -61,7 +61,7 @@
                                   <td class="text-center">
                                       <img class="rounded" src="../Images/<%: item.Avatar %>" alt="Avatar" width="100"/>
                                   </td>
-                                  <td><%: item.Name %></td>
+                                  <td><a href="../DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>"><%: item.Name %></a></td>
                                   <td><%: item.Brand %></td>
                                   <td><%: item.SalePrice %></td>
                                   <td><%: item.DateEdit %></td>
