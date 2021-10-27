@@ -127,6 +127,8 @@
                   <li><a class="nav-link" href="Category.aspx?p=1"><i data-feather="layout"></i><span>Danh mục</span></a>
                   </li>
                     <%} %>
+                    <li><a class="nav-link" href="Orders.aspx?p=1"><i data-feather="check-circle"></i><span>Đơn hàng</span></a>
+                  </li>
                   <li class="sidebar-main-title">
                     <div>
                       <h6>Tùy chọn</h6>
