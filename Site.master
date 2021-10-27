@@ -44,8 +44,8 @@
                         <!-- Header Advance Search Start -->
                         <div class="header-advance-search">
                         
-                            <form action="#">
-                                <div class="input"><input type="text" placeholder="Tìm kiếm thiết bị"/></div>
+                            <form action="Search.aspx" method="get">
+                                <div class="input"><input type="text" name="name" placeholder="Tìm kiếm thiết bị"/></div>
                                 <div class="submit"><button><i class="icofont icofont-search"></i></button></div>
                             </form>
                         
@@ -64,7 +64,7 @@
                                {
                                     foreach (Personnel item in (List<Personnel>)Session["LoginSession"])
                                     {%>
-                            <a href="Profile.aspx?id=<%: item.Id %>"><i class="icofont icofont-user-alt-7"></i> <span><%: item.Name %></span></a>
+                            <a href="ProfileUser.aspx"><i class="icofont icofont-user-alt-7"></i> <span><%: item.Name %></span></a>
                             <a href="Logout.aspx"><i class="icofont icofont-login d-none"></i> <span>Đăng xuất</span></a>
                             <%      } 
                               }%>
@@ -96,15 +96,15 @@
                                 <ul>
                                     <li><a href="Default.aspx">Trang chủ</a>
                                     </li>
-                                    <li class="menu-item-has-children"><a href="Product.aspx">Điện Thoại</a>
+                                    <li class="menu-item-has-children"><a href="Products.aspx?&p=1">Điện Thoại</a>
                                         <ul class="sub-menu">
                                             <% foreach (Category item in listCategories)
                                              { %>
-                                            <li><a href="Product.aspx?slug=<%: item.Slug %>"><%: item.Name %></a></li>
+                                            <li><a href="Products.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>&p=1"><%: item.Name %></a></li>
                                             <%} %>
                                         </ul>
                                     </li>
-                                    <li><a href="Product.aspx?slug=old">Điện Thoại cũ</a>
+                                    <li><a href="Products.aspx?slug=old&p=1">Điện Thoại cũ</a>
                                     </li>
                                     <li><a href="Contact.aspx">Liên hệ</a></li>
                                 </ul>

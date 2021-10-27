@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Register" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="ProfileUser.aspx.cs" Inherits="ProfileUser" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <!-- Page Banner Section Start -->
@@ -8,11 +8,11 @@
         <!-- Page Banner -->
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
-                <h1>ĐĂNG KÍ</h1>
+                <h1>Thông tin cá nhân</h1>
                 <div class="breadcrumb">
                     <ul>
                         <li><a href="Default.aspx">TRANG CHỦ</a></li>
-                        <li><a>ĐĂNG KÍ</a></li>
+                        <li><a>Thông tin cá nhân</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,25 +37,17 @@
             <!-- Register -->
             <div class="col-12 d-flex justify-content-center">
                 <div class="ee-register">
-                    
-                    <h3 class="text-center">Đăng ký</h3>
-                    <p class="text-center">Bạn hãy đăng kí để sử dụng tối đa dịch vụ của chúng tôi</p>
-                    
                     <!-- Register Form -->
-                    <form runat="server">
+                    <form id="Form1" runat="server">
                         <div class="row">
-                            <%--<div class="ee-account-image pb-30">
+                            <div class="ee-account-image pb-30">
                                 <h4>Cập nhật ảnh đại diện</h4>
-                                <img src="assets/images/account-image-placeholder.jpg" alt="Account Image Placeholder" class="image-placeholder">
-                                <asp:FileUpload ID="avatar" runat="server" />
-                                <p>jpeg, jpg, png, gif 250x250</p>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Ảnh đại diện không được để trống" Display="Dynamic" ControlToValidate="avatar" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-                            </div>--%>
+                                <asp:Image class="image-placeholder" ID="previewAvatar" runat="server" />
+                            </div>
                             <div class="col-12 mb-30">
                                 <label>Ảnh đại diện</label>
                                 <asp:FileUpload ID="avatar" runat="server" />
                                 <label class="d-block">jpeg, jpg, png, gif 250x250</label>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Ảnh đại diện không được để trống" Display="Dynamic" ControlToValidate="avatar" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-12 mb-30">
                                 <asp:TextBox ID="name" placeholder="Tên khách hàng" runat="server"></asp:TextBox>
@@ -79,14 +71,9 @@
                                 <asp:TextBox ID="password" placeholder="Mật khẩu" runat="server" TextMode="Password"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Mật khẩu không được để trống" Display="Dynamic" ControlToValidate="password" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </div>
-                            <div class="col-12 mb-30">
-                                <asp:TextBox ID="comfPassword" placeholder="Xác nhận mật khẩu" runat="server" TextMode="Password"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Xác nhận mật khẩu không được để trống" Display="Dynamic" ControlToValidate="comfPassword" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-                                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="comfPassword" ControlToCompare="password" ErrorMessage="Mật khẩu không khớp" Display="Dynamic" ForeColor="#CC0000"/>
-                            </div>
                             
                             <div class="col-12">
-                                <asp:Button ID="Button1" runat="server" Text="Đăng ký" OnClick="Button1_Click" />
+                                <asp:Button ID="Button1" runat="server" Text="Sửa" OnClick="Button1_Click" />
                             </div>
                         </div>
                     </form>

@@ -9,11 +9,10 @@
         <div class="col-lg-4 col-12 order-lg-2 d-flex align-items-center justify-content-center">
             <div class="page-banner">
                 <h1>ĐĂNG NHẬP</h1>
-                <p>similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita</p>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="#">TRANG CHỦ</a></li>
-                        <li><a href="#">ĐĂNG NHẬP</a></li>
+                        <li><a href="Default.aspx">TRANG CHỦ</a></li>
+                        <li><a>ĐĂNG NHẬP</a></li>
                     </ul>
                 </div>
             </div>
@@ -21,12 +20,10 @@
 
         <!-- Banner -->
         <div class="col-lg-4 col-md-6 col-12 order-lg-1">
-            <div class="banner"><a href="#"><img src="assets/images/banner/banner-15.jpg" alt="Banner"></a></div>
         </div>
 
         <!-- Banner -->
         <div class="col-lg-4 col-md-6 col-12 order-lg-3">
-            <div class="banner"><a href="#"><img src="assets/images/banner/banner-14.jpg" alt="Banner"></a></div>
         </div>
 
     </div>

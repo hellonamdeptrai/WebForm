@@ -20,7 +20,7 @@
                                     <h2>MỚI NHẤT!</h2>
                                     <h1><span><%: item.Name %></span></h1>
                                     <h1>-<span class="big"><%: item.Discount %>%</span> OFF</h1>
-                                    <a href="DetailProduct.aspx?slug=<%: item.Slug %>">Xem chi tiết</a>
+                                    <a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>">Xem chi tiết</a>
 
                                 </div>
 
@@ -60,7 +60,7 @@
                                 <!-- Image -->
                                 <div class="image">
                                     <span class="label new">-<%: item.Discount %>%</span>
-                                    <a href="single-product.html" class="img"><img src="Images/<%: item.Avatar %>" alt="Product Image"></a>
+                                    <a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>" class="img"><img src="Images/<%: item.Avatar %>" alt="Product Image"></a>
 
                                     <a href="AddCart.aspx?id=<%: item.Id %>" class="add-to-cart"><i class="ti-shopping-cart"></i><span>+ giỏ hàng</span></a>
 
@@ -73,7 +73,7 @@
                                     <div class="category-title">
 
                                         <a href="#" class="cat"><%: item.Brand %></a>
-                                        <h5 class="title"><a href="single-product.html"><%: item.Name %></a></h5>
+                                        <h5 class="title"><a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>"><%: item.Name %></a></h5>
 
                                     </div>
 
@@ -158,7 +158,7 @@
                                 <!-- Image -->
                                 <div class="image">
                                     <span class="label new">-<%: item.Discount %>%</span>
-                                    <a href="single-product.html" class="img"><img src="Images/<%: item.Avatar %>" alt="Product Image"></a>
+                                    <a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>" class="img"><img src="Images/<%: item.Avatar %>" alt="Product Image"></a>
 
                                     <a href="AddCart.aspx?id=<%: item.Id %>" class="add-to-cart"><i class="ti-shopping-cart"></i><span>+ giỏ hàng</span></a>
 
@@ -171,7 +171,7 @@
                                     <div class="category-title">
 
                                         <a href="#" class="cat"><%: item.Brand %></a>
-                                        <h5 class="title"><a href="single-product.html"><%: item.Name %></a></h5>
+                                        <h5 class="title"><a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>"><%: item.Name %></a></h5>
 
                                     </div>
 
@@ -214,7 +214,7 @@
                                 <!-- Image -->
                                 <div class="image">
                                     <span class="label new">-<%: item.Discount %>%</span>
-                                    <a href="single-product.html" class="img"><img src="Images/<%: item.Avatar %>" alt="Product Image"></a>
+                                    <a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>" class="img"><img src="Images/<%: item.Avatar %>" alt="Product Image"></a>
 
                                     <a href="AddCart.aspx?id=<%: item.Id %>" class="add-to-cart"><i class="ti-shopping-cart"></i><span>+ giỏ hàng</span></a>
 
@@ -227,7 +227,7 @@
                                     <div class="category-title">
 
                                         <a href="#" class="cat"><%: item.Brand %></a>
-                                        <h5 class="title"><a href="single-product.html"><%: item.Name %></a></h5>
+                                        <h5 class="title"><a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>"><%: item.Name %></a></h5>
 
                                     </div>
 
