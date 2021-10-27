@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 public partial class SiteMaster : MasterPage
 {
     public List<Category> listCategories = new List<Category>();
+    public int totalListCart = 0;
 
     protected void Page_Init(object sender, EventArgs e)
     {
@@ -24,6 +25,15 @@ public partial class SiteMaster : MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         SqlConnection con = Connection.SqlConnectServer();
+        if (Session["CartsSession"] != null)
+        {
+
+            foreach (Carts item in (List<Carts>)Session["CartsSession"])
+            {
+                totalListCart++;
+            }
+
+        }
         try
         {
             con.Open();

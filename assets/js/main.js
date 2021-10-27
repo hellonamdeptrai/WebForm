@@ -132,25 +132,7 @@ searchToggle.on('click', function(){
         searchContainer.slideUp();
     }
     
-});
-/*--
-    Header Cart
-------------------------*/
-var headerCart = $('.header-cart');
-var closeCart = $('.close-cart, .cart-overlay');
-var miniCartWrap = $('.mini-cart-wrap');
-
-headerCart.on('click', function(e){
-    e.preventDefault();
-    $('.cart-overlay').addClass('visible');
-    miniCartWrap.addClass('open');
-});
-closeCart.on('click', function(e){
-    e.preventDefault();
-    $('.cart-overlay').removeClass('visible');
-    miniCartWrap.removeClass('open');
-});
-    
+}); 
 /*--
     Hero Slider
 --------------------------------------------*/
