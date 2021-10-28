@@ -51,7 +51,7 @@
                                     <span class="label new">-<%: item.Discount %>%</span>
                                     <a href="DetailProduct.aspx?id=<%: item.Id %>&slug=<%: item.Slug %>" class="img"><img src="Images/<%: item.Avatar %>" alt="Product Image"></a>
 
-                                    <a href="AddCart.aspx?id=<%: item.Id %>" class="add-to-cart"><i class="ti-shopping-cart"></i><span>+ giỏ hàng</span></a>
+                                    <a href="CartHandling.aspx?id=<%: item.Id %>" class="add-to-cart"><i class="ti-shopping-cart"></i><span>+ giỏ hàng</span></a>
 
                                 </div>
 

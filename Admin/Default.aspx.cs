@@ -19,7 +19,7 @@ public partial class Admin_Default : System.Web.UI.Page
             SqlCommand cmdT = new SqlCommand();
             cmdT.Connection = con;
             cmdT.CommandType = System.Data.CommandType.StoredProcedure;
-            cmdT.CommandText = "CountOrder";
+            cmdT.CommandText = "CountOrderSell";
 
             cmdT.ExecuteNonQuery();
             SqlDataReader dataT = cmdT.ExecuteReader();
